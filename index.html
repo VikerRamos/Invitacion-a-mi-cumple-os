@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación de Cumpleaños </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-deco top-left"></div>
+    <div class="hero-deco top-right"></div>
+    <p class="eyebrow">Estás invitado a</p>
+    <h1>Mi Cumpleaños </h1>
+    <p class="subtitle">Una noche especial que no querrás perderte</p>
+    <div class="hero-deco bottom-left"></div>
+    <div class="hero-deco bottom-right"></div>
+  </div>
+
+  <main class="container">
+
+    <section class="info-grid">
+      <div class="info-card">
+        <span class="icon">📅</span>
+        <h3>Fecha</h3>
+        <p>Sábado, 28 de Junio</p>
+        <p class="detail">2026</p>
+      </div>
+      <div class="info-card">
+        <span class="icon">🕖</span>
+        <h3>Hora</h3>
+        <p>7:00 PM</p>
+        <p class="detail">Puntual por favor</p>
+      </div>
+      <div class="info-card">
+        <span class="icon">📍</span>
+        <h3>Lugar</h3>
+        <p>Salón Las Palmas</p>
+        <p class="detail">Av. Principal 123, Arequipa</p>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <h2>Faltan...</h2>
+      <div class="countdown" id="countdown">
+        <div class="time-block">
+          <span id="days">00</span>
+          <label>días</label>
+        </div>
+        <div class="separator">:</div>
+        <div class="time-block">
+          <span id="hours">00</span>
+          <label>horas</label>
+        </div>
+        <div class="separator">:</div>
+        <div class="time-block">
+          <span id="minutes">00</span>
+          <label>minutos</label>
+        </div>
+        <div class="separator">:</div>
+        <div class="time-block">
+          <span id="seconds">00</span>
+          <label>segundos</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp-section">
+      <h2>¿Vas a venir?</h2>
+      <p>Confirma tu asistencia antes del 20 de junio</p>
+      <div class="rsvp-buttons">
+        <button class="btn btn-yes" onclick="confirmar('si')">Sí, ahí estaré </button>
+        <button class="btn btn-no" onclick="confirmar('no')">No podré ir </button>
+      </div>
+      <p class="rsvp-msg" id="rsvpMsg"></p>
+    </section>
+
+    <section class="dress-section">
+      <p>Elegante casual · Colores claros</p>
+      <div class="tags">
+        <span class="tag">Vestido</span>
+        <span class="tag">Camisa</span>
+        <span class="tag">Elegante</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>· Para más info para que tengas tu pagina: <a href="https://wa.me/51999999999">WhatsApp</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
